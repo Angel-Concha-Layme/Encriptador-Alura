@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="./static/img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/index.css" />
+  </head>
+  <body>
+    <div class="display">
+      <header>
+        <div class="header">
+          <a href="#">
+            <img src="./static/img/logo.svg" alt="logo alura" />
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <div class="contenedor">
+          <div class="form">
+            <form  class="encriptador">
+              <textarea
+                name="input"
+                id="input"
+                cols="30"
+                rows="10"
+                placeholder="Ingrese el texto aquí"
+                required
+              ></textarea>
+              <span>
+                <img src="./static/img/alert.svg" alt="" /> Solo letras
+                minúsculas y sin acentos
+              </span>
+              <button class="encriptar">Encriptar</button>
+              <button class="desencriptar">Desencriptar</button>
+            </form>
+          </div>
+
+          <aside>
+            <div class="content default">
+              <div class="text_and_img">
+                <img src="./static/img/munieco.svg" alt="lock" />
+                <div class="description">
+                    <p class="bold_text">Ningún mensaje fue encontrado</p>
+                    <p class="normal_text">
+                        Ingresa el texto que desees encriptar o desencriptar
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="content_post_encript" id="output">
+              <textarea name="output_text" id="output_text" ></textarea>
+              <button id="copy">Copiar</button>
+            </div>
+          </aside>
+      </main>
+
+      <footer>
+        <p>
+          © 2023 Todos los derechos reservados por Angel Tomas Concha Layme |
+          Oracle+AluraLatam.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
