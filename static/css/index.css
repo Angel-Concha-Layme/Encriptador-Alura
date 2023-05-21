@@ -100,9 +100,8 @@ aside .content_post_encript{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    display: none;
 }
+
 aside .content_post_encript textarea{
     width: 400px;
     height: 500px;
@@ -144,15 +143,11 @@ aside{
 
 }
 
-
-
 aside .text_and_img{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-/*    display: none;*/
 }
 
 aside .text_and_img .bold_text {
@@ -181,4 +176,14 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
+}
+
+
+
+.default{
+    display: block;
+}
+
+.dontShow{
+    display: none;
 }
