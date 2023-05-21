@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador</title>
-    <link rel="shortcut icon" href="./static/img/logo.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./static/img/logo.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./static/css/index.css" />
   </head>
   <body>
@@ -21,7 +25,7 @@
       <main>
         <div class="contenedor">
           <div class="form">
-            <form  class="encriptador">
+            <form class="encriptador">
               <textarea
                 name="input"
                 id="input"
@@ -34,28 +38,35 @@
                 <img src="./static/img/alert.svg" alt="" /> Solo letras
                 minúsculas y sin acentos
               </span>
-              <button class="encriptar">Encriptar</button>
-              <button class="desencriptar">Desencriptar</button>
+              <button type="button" class="encriptar" id="buttonEncode">
+                Encriptar
+              </button>
+              <button type="button" class="desencriptar" id="buttonDecode">
+                Desencriptar
+              </button>
             </form>
           </div>
 
           <aside>
-            <div class="content default">
-              <div class="text_and_img">
+            <div class="default">
+              <div class="text_and_img" id="default">
                 <img src="./static/img/munieco.svg" alt="lock" />
                 <div class="description">
-                    <p class="bold_text">Ningún mensaje fue encontrado</p>
-                    <p class="normal_text">
-                        Ingresa el texto que desees encriptar o desencriptar
-                    </p>
+                  <p class="bold_text">Ningún mensaje fue encontrado</p>
+                  <p class="normal_text">
+                    Ingresa el texto que desees encriptar o desencriptar
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="content_post_encript" id="output">
-              <textarea name="output_text" id="output_text" ></textarea>
-              <button id="copy">Copiar</button>
+            <div class="result dontShow">
+              <div class="content_post_encript" id="result">
+                <textarea name="output_text" id="output_text"></textarea>
+                <button type="button" id="copy">Copiar</button>
+              </div>
             </div>
           </aside>
+        </div>
       </main>
 
       <footer>
@@ -66,5 +77,5 @@
       </footer>
     </div>
   </body>
-  <script src="./js/index.js"></script>
+  <script src="js/index.js"></script>
 </html>
