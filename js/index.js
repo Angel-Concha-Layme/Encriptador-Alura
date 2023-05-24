@@ -88,5 +88,12 @@ const encode = () => {
   }
 };
 
+const copy = () => {
+  let copyText = output.value;
+  navigator.clipboard.writeText(copyText);
+};
+
+
 buttonEncode.addEventListener("click", encode);
 buttonDecode.addEventListener("click", decode);
+buttonCopy.addEventListener("click", copy);
